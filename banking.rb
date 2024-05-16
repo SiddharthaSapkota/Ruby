@@ -1,3 +1,4 @@
+#simple program to display, deposit, withdraw the amount in or from the bank account.
 class Account
   attr_reader :name, :balance
   def initialize (name, balance=100)
