@@ -44,8 +44,21 @@ class Account
   end
 end
 
+class CheckingAccount < Account
+  def initialize(name, balance=100)
+    super
+  end
+end
+
+class SavingAccount < Account
+  def initialize(name, balance=100)
+    super
+  end
+end
 checking_account = Account.new("Siddhartha", 10_00_000)
+saving_account = Account.new("Sid", 50_000)
 
 #checking_account.deposit(5_00_00_000) #to deposit the balance
 #checking_account.withdraw(1234, 50_00_000) #to withdraw the amount
-checking_account.display_balance(1234) #to check the balance on the account
+saving_account.deposit(10234) #to check the balance on the account
+#checking_account.display_balance(1234)
